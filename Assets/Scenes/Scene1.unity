@@ -372,10 +372,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 161731000}
-  - component: {fileID: 161731001}
   - component: {fileID: 161731004}
   - component: {fileID: 161731003}
-  - component: {fileID: 161731002}
   - component: {fileID: 161731005}
   - component: {fileID: 161731006}
   m_Layer: 7
@@ -400,56 +398,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 371305800}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &161731001
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 161730999}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &161731002
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 161730999}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!33 &161731003
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -543,12 +491,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   health: 5
-  walkPoint: {x: 5, y: 5, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
-  projectile: {fileID: 0}
-  sightRange: 5
-  attackRange: 5
+  walkPoint: {x: 5, y: 5, z: 1}
+  walkPointRange: 5
+  timeBetweenAttacks: 0.5
+  projectile: {fileID: 743927190}
+  sightRange: 20
+  attackRange: 10
   playerInSightRange: 1
   playerInAttackRange: 0
 --- !u!1 &218969319
@@ -832,10 +780,10 @@ MonoBehaviour:
   walkPoint: {x: 5, y: 5, z: 1}
   walkPointRange: 5
   timeBetweenAttacks: 0.5
-  projectile: {fileID: 0}
+  projectile: {fileID: 743927190}
   sightRange: 20
   attackRange: 12
-  playerInSightRange: 1
+  playerInSightRange: 0
   playerInAttackRange: 0
 --- !u!1001 &339003384
 PrefabInstance:
@@ -1377,6 +1325,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 66.194, y: -57.395, z: -21.79}
+--- !u!1 &743927190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 743927191}
+  m_Layer: 0
+  m_Name: Test_Projectile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &743927191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743927190}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 254.92157, y: 8.828281, z: 85.35159}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &834314192
 GameObject:
   m_ObjectHideFlags: 0
@@ -3877,6 +3856,7 @@ SceneRoots:
   - {fileID: 1748609872}
   - {fileID: 1416893491}
   - {fileID: 865187643}
+  - {fileID: 743927191}
   - {fileID: 1354920896}
   - {fileID: 834314193}
   - {fileID: 371305800}
