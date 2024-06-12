@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BB16203D-74C2-1127-DFBB-83D020F93C51}</ProjectGuid>
+    <ProjectGuid>{252B05D3-9021-1C24-0AFF-D5BFC7BA3A60}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>sc.terrain.painter.runtime</AssemblyName>

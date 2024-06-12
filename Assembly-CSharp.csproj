@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{32C3BDE6-E125-3128-82C1-25D0441455A3}</ProjectGuid>
+    <ProjectGuid>{4FB18399-A5DE-1074-54AD-B3B6DAE71471}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -1112,11 +1112,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="sc.terrain.painter.runtime.csproj">
-      <Project>{BB16203D-74C2-1127-DFBB-83D020F93C51}</Project>
+      <Project>{252B05D3-9021-1C24-0AFF-D5BFC7BA3A60}</Project>
       <Name>sc.terrain.painter.runtime</Name>
     </ProjectReference>
     <ProjectReference Include="sc.terrain.painter.editor.csproj">
-      <Project>{08712948-8DCF-F823-4072-86F2A50C76D2}</Project>
+      <Project>{40FA7F36-BEE1-B262-57D0-FDCDBC1ED695}</Project>
       <Name>sc.terrain.painter.editor</Name>
     </ProjectReference>
   </ItemGroup>

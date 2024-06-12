@@ -377,7 +377,8 @@ GameObject:
   - component: {fileID: 161731003}
   - component: {fileID: 161731002}
   - component: {fileID: 161731005}
-  m_Layer: 0
+  - component: {fileID: 161731006}
+  m_Layer: 7
   m_Name: Enemy2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -521,6 +522,35 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &161731006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161730999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc285f744da65044ea3801b05a143f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 161731005}
+  player: {fileID: 1821927486}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 8
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 64
+  health: 5
+  walkPoint: {x: 5, y: 5, z: 0}
+  walkPointRange: 10
+  timeBetweenAttacks: 1
+  projectile: {fileID: 0}
+  sightRange: 5
+  attackRange: 5
+  playerInSightRange: 1
+  playerInAttackRange: 0
 --- !u!1 &218969319
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,13 +829,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   health: 10
-  walkPoint: {x: 0, y: 0, z: 0}
+  walkPoint: {x: 5, y: 5, z: 1}
   walkPointRange: 5
   timeBetweenAttacks: 0.5
   projectile: {fileID: 0}
   sightRange: 20
   attackRange: 12
-  playerInSightRange: 0
+  playerInSightRange: 1
   playerInAttackRange: 0
 --- !u!1001 &339003384
 PrefabInstance:
@@ -885,7 +915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 371305800}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2186,7 +2216,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 7a60f672daac16c4aa4d48c3b16aa11a, type: 2}
   m_BuildHeightMesh: 0
 --- !u!1 &1206085816
 GameObject:
@@ -2279,7 +2309,7 @@ GameObject:
   - component: {fileID: 1300417569}
   - component: {fileID: 1300417568}
   - component: {fileID: 1300417571}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2439,7 +2469,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354920895}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e47c5637067c7e4887160f3ea14e007, type: 3}
   m_Name: 
@@ -3310,6 +3340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterPlane
       objectReference: {fileID: 0}
+    - target: {fileID: 134676, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
       propertyPath: m_LocalScale.x
       value: 45
@@ -3357,6 +3391,10 @@ PrefabInstance:
     - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144622364408550, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
